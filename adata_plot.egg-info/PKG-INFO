@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: adata-plot
+Version: 0.1.0
+Summary: A package for plotting single-cell data with Altair and Scanpy
+Home-page: https://github.com/yourusername/adata_plot
+Author: Your Name
+Author-email: xiyuan315@outlook.com
+License: UNKNOWN
+Description: # adata_plot
+        
+        A package for plotting single-cell data with Altair and Scanpy.
+        
+        ## Installation
+        
+        You can install the package using pip:
+        
+        ```bash
+        pip install adata_plot
+        ```
+        
+        ## Usage
+        
+        ```bash
+        import scanpy as sc
+        import adata_plot as ap
+        
+        adata = sc.datasets.pbmc3k()
+        
+        # Generate a UMAP plot colored by cell type
+        plot = ap.int_plot(adata, "sc.pl.umap(target, color=['cell_type'])")
+        plot.show()
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
